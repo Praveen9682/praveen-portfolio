@@ -1,3 +1,4 @@
+/* Existing Base Styles */
 .navbar {
   display: flex;
   align-items: center;
@@ -54,6 +55,7 @@
   cursor: pointer;
 }
 
+/* Medium Devices - Tablets and up to small laptops */
 @media (max-width: 768px) {
   .navbar {
     margin: 20px 50px;
@@ -105,5 +107,46 @@
     padding-left: 100px;
     flex-direction: row;
     gap: 20px;
+  }
+}
+
+/* Small Devices - Smartphones */
+@media (max-width: 640px) {
+  .navbar {
+    margin: 20px 30px;
+  }
+
+  .nav-menu {
+    width: 280px;
+  }
+
+  .nav-mob-close {
+    left: 240px;
+  }
+
+  .nav-menu li {
+    font-size: 26px;
+    padding-left: 70px;
+  }
+}
+
+/* Extra Small Devices - Older phones or very small screens */
+@media (max-width: 480px) {
+  .navbar {
+    margin: 15px 20px;
+  }
+
+  .nav-menu {
+    width: 240px;
+  }
+
+  .nav-mob-close {
+    left: 200px;
+  }
+
+  .nav-menu li {
+    font-size: 22px;
+    padding-left: 50px;
+    gap: 15px;
   }
 }

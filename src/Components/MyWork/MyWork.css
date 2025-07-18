@@ -1,4 +1,4 @@
-.mywork{
+.mywork {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,30 +7,30 @@
     margin: 88px 170px;
 }
 
-.mywork-title{
+.mywork-title {
     position: relative;
 }
 
-.mywork-title h1{
+.mywork-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 800;
 }
 
-.mywork-title img{
+.mywork-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
 
-.mywork-container{
+.mywork-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
 
-.mywork-container img{
+.mywork-container img {
     box-sizing: border-box;
     width: 419px;
     height: 280px;
@@ -38,14 +38,14 @@
     cursor: pointer;
 }
 
-.mywork-container img:hover{
+.mywork-container img:hover {
     transform: scale(1.10);
     border: 4px solid #ff00ff;
     border-radius: 15px;
     transition: 0.3s;
 }
 
-.mywork-showmore{
+.mywork-showmore {
     display: flex;
     gap: 15px;
     border-radius: 50px;
@@ -58,40 +58,109 @@
     cursor: pointer;
 }
 
-
-.mywork-showmore:hover{
+.mywork-showmore:hover {
     gap: 30px;
     transition: 0.6s;
 }
 
-@media(max-width:768px){
-    .mywork{
+/* Medium Devices - Tablets */
+@media (max-width: 768px) {
+    .mywork {
         align-items: start;
         gap: 50px;
         margin: 50px 70px;
     }
-    .mywork-title h1{
+
+    .mywork-title h1 {
         padding: 0;
         font-size: 50px;
         font-weight: 600;
     }
-    .mywork-title img{
+
+    .mywork-title img {
         width: 130px;
         right: -20px;
     }
-    .mywork-container{
+
+    .mywork-container {
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
-    .mywork-container img{
+
+    .mywork-container img {
         width: 100%;
         height: 100%;
     }
 
-    .mywork-showmore{
+    .mywork-showmore {
         padding: 20px 40px;
         font-size: 18px;
         margin: 50px auto;
-        cursor: pointer;
+    }
+}
+
+/* Small Devices - Phones */
+@media (max-width: 640px) {
+    .mywork {
+        gap: 40px;
+        margin: 40px 40px;
+    }
+
+    .mywork-title h1 {
+        font-size: 40px;
+    }
+
+    .mywork-title img {
+        width: 100px;
+        right: -10px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mywork-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mywork-showmore {
+        padding: 18px 36px;
+        font-size: 16px;
+    }
+}
+
+/* Extra Small Devices - Small/Old Phones */
+@media (max-width: 480px) {
+    .mywork {
+        gap: 30px;
+        margin: 30px 20px;
+    }
+
+    .mywork-title h1 {
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .mywork-title img {
+        width: 80px;
+        right: 0;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .mywork-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mywork-showmore {
+        padding: 15px 30px;
+        font-size: 14px;
+        margin-bottom: 40px;
     }
 }
